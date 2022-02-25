@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [SeleniumFrameworkETE]]">
+  <listeners>
+    <listener class-name="com.sf.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="BankingApp Test(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.sf.testCases.TC_LoginDDT_002">
+        <methods>
+          <include name="loginDDT" invocation-numbers="1 2 4"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.sf.testCases.TC_LoginDDT_002 -->
+      <class name="com.sf.testCases.TC_LoginTest_001">
+        <methods>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.sf.testCases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- BankingApp Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [SeleniumFrameworkETE]] -->
